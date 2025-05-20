@@ -2,8 +2,6 @@
 
 A modern, responsive portfolio website built with Next.js and TailwindCSS, showcasing my experience, projects, and skills as a Data Engineer and AI enthusiast.
 
-![Portfolio Preview](public/assets/Subject.PNG)
-
 ## 🌟 Features
 
 - **Modern Design**: Clean and professional interface with a retro-inspired theme
