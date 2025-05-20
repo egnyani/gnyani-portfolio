@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Gnyani Enugandula",
-  description: "Data analyst and AI enthusiast with a passion for solving complex problems through data-driven approaches.",
+  description: "Data analyst and Data Engineer with a passion of AI Automation and Data driven Solution.",
   icons: {
     icon: [
       { url: "/assets/favicon_io/favicon-16x16.png", sizes: "16x16", type: "image/png" },
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   manifest: "/assets/favicon_io/site.webmanifest",
   openGraph: {
     title: "Gnyani Enugandula - Portfolio",
-    description: "Data analyst and AI enthusiast with a passion for solving complex problems through data-driven approaches.",
+    description: "Data analyst and Data Engineer with a passion of AI Automation and Data driven Solution.",
     url: "https://gnyani-portfolio.vercel.app",
     siteName: "Gnyani's Portfolio",
     images: [
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Gnyani Enugandula - Portfolio",
-    description: "Data analyst and AI enthusiast with a passion for solving complex problems through data-driven approaches.",
+    description: "Data analyst and Data Engineer with a passion of AI Automation and Data driven Solution.",
     images: ["/assets/thumbnail.png"],
     creator: "@egnyani",
     site: "@egnyani",
