@@ -1,7 +1,7 @@
 "use client";
 import { socialLinks } from "@/data/navLinks";
-import Image from "next/image";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 // Social Icon Component
 export const SocialIcon = ({ type, size = 18 }: { type: string; size?: number }) => {
@@ -71,10 +71,13 @@ const Navbar = () => {
       }`}>
         <div className="h-10 w-10 relative">
           <a href="#home">
-            <img 
+            <Image 
               src="/assets/Subject.PNG" 
               alt="Logo" 
-              className="h-full w-full object-cover"
+              width={40}
+              height={40}
+              className="object-cover"
+              priority
             />
           </a>
         </div>
