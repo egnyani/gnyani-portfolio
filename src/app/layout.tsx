@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "Gnyani's Portfolio",
     images: [
       {
-        url: "/thumbnail",
+        url: "/assets/thumbnail.png",
         width: 1200,
         height: 630,
         alt: "Gnyani Enugandula - Data Analyst & AI Enthusiast",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Gnyani Enugandula - Portfolio",
     description: "Data analyst and AI enthusiast with a passion for solving complex problems through data-driven approaches.",
-    images: ["/thumbnail"],
+    images: ["/assets/thumbnail.png"],
     creator: "@egnyani",
     site: "@egnyani",
   },
