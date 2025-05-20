@@ -38,6 +38,29 @@ export const metadata: Metadata = {
     ],
   },
   manifest: "/assets/favicon_io/site.webmanifest",
+  openGraph: {
+    title: "Gnyani Enugandula - Portfolio",
+    description: "Data analyst and AI enthusiast with a passion for solving complex problems through data-driven approaches.",
+    url: "https://gnyani-portfolio.vercel.app",
+    siteName: "Gnyani's Portfolio",
+    images: [
+      {
+        url: "/assets/Subject.PNG",
+        width: 1200,
+        height: 630,
+        alt: "Gnyani's Portfolio Preview",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gnyani Enugandula - Portfolio",
+    description: "Data analyst and AI enthusiast with a passion for solving complex problems through data-driven approaches.",
+    images: ["/assets/Subject.PNG"],
+    creator: "@egnyani",
+  },
 };
 
 export default function RootLayout({
