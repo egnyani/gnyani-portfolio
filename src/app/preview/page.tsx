@@ -1,4 +1,3 @@
-import PreviewImage from "@/components/PreviewImage";
 import Navbar from "@/components/Navbar";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
@@ -19,9 +18,6 @@ export default function PreviewPage() {
       <Experience />
       <Skills />
       <Footer />
-      <div className="fixed bottom-4 right-4 z-50">
-        <PreviewImage />
-      </div>
     </main>
   );
 } 
