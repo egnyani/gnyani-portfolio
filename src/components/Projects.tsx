@@ -3,6 +3,25 @@ import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { projects, type Project } from "@/data/projectsData";
 
+// Add global styles for scrollbar
+const scrollbarStyles = `
+  .custom-scrollbar::-webkit-scrollbar {
+    height: 8px;
+    display: block;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #F9E8D0;
+    border: 1px solid black;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: black;
+    border: 1px solid black;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #333;
+  }
+`;
+
 // Project Card Component
 interface ProjectCardProps {
   project: Project;
@@ -129,9 +148,10 @@ const Projects = () => {
 
   return (
     <section id="projects" className="bg-[#d6ddeb] px-16 md:px-24 lg:px-32 py-30">
+      <style>{scrollbarStyles}</style>
       <h2 className="text-3xl font-bold mb-12">Projects</h2>
       
-      <div className="overflow-x-auto pb-4">
+      <div className="overflow-x-scroll custom-scrollbar pb-4">
         <div className="flex space-x-6" style={{ minWidth: "min-content" }}>
           {projects.map((project) => (
             <ProjectCard 
