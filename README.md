@@ -1,84 +1,30 @@
 # Gnyani's Portfolio
 
-A modern, responsive portfolio website built with Next.js and TailwindCSS, showcasing my experience, projects, and skills as a Data Engineer and AI enthusiast.
+A simple, clean portfolio built with Next.js and TailwindCSS. It highlights my work in software development, data engineering, my interest in AI.
 
-## 🌟 Features
+## 🌟 What’s Inside
 
-- **Modern Design**: Clean and professional interface with a retro-inspired theme
-- **Responsive Layout**: Fully responsive design that works on all devices
-- **Interactive Components**: 
-  - Dynamic project cards with detailed modals
-  - Interactive experience timeline
-  - Skills showcase with categorized cards
-- **Smooth Animations**: Subtle animations and transitions for better user experience
-- **Performance Optimized**: Built with Next.js for optimal performance and SEO
+- A modern layout that looks good on any device
+- Smooth little animations and transitions
+- Cards for experience, and skills
+- Easy-to-edit content and theme
 
-## 🚀 Live Demo
-
-Visit the live portfolio at: [Your Portfolio URL]
 
 ## 🛠️ Technologies Used
 
-- **Framework**: Next.js 15.3.2
-- **Styling**: TailwindCSS
-- **Language**: TypeScript
-- **Animation**: CSS Animations
-- **Icons**: Custom SVG icons
-- **Deployment**: Vercel
+- Next.js
+- TailwindCSS
+- TypeScript
+- CSS animations
+- Deployed on Vercel
 
-## 📦 Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/egnyani/gnyani-portfolio.git
-cd gnyani-portfolio
-```
+## About Me
 
-2. Install dependencies:
-```bash
-npm install
-```
+Gnyani Enugandula
+GitHub: @egnyani
+LinkedIn: https://www.linkedin.com/in/gnyani-enugandula-6a0149262/
 
-3. Run the development server:
-```bash
-npm run dev
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
-
-## 🏗️ Project Structure
-
-```
-gnyani-portfolio/
-├── public/              # Static assets
-│   └── assets/         # Images and documents
-├── src/
-│   ├── app/            # Next.js app directory
-│   ├── components/     # React components
-│   └── data/          # Data files
-├── tailwind.config.ts  # Tailwind configuration
-└── package.json        # Project dependencies
-```
-
-## 🎨 Customization
-
-1. **Content**: Update the content in `src/data/` directory
-2. **Styling**: Modify the Tailwind classes in components
-3. **Theme**: Adjust colors and styles in `tailwind.config.ts`
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 👨‍💻 Author
-
-**Gnyani Enugandula**
-- GitHub: [@egnyani](https://github.com/egnyani)
-- LinkedIn: [Your LinkedIn Profile]
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/egnyani/gnyani-portfolio/issues).
 
 ## 🙏 Acknowledgments
 
