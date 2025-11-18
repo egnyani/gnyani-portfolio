@@ -21,9 +21,9 @@ A simple, clean portfolio built with Next.js and TailwindCSS. It highlights my w
 
 ## About Me
 
-Gnyani Enugandula
-GitHub: @egnyani
-LinkedIn: https://www.linkedin.com/in/gnyani-enugandula-6a0149262/
+- Gnyani Enugandula
+- GitHub: @egnyani
+- LinkedIn: https://www.linkedin.com/in/gnyani-enugandula-6a0149262/
 
 
 ## 🙏 Acknowledgments
