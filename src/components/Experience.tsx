@@ -22,13 +22,13 @@ const scrollbarStyles = `
 
 // Company Button Component
 interface CompanyButtonProps {
-  index: number;
   company: string;
+  experienceId: string;
   isSelected: boolean;
   onClick: () => void;
 }
 
-const CompanyButton = ({ index, company, isSelected, onClick }: CompanyButtonProps) => (
+const CompanyButton = ({ company, experienceId, isSelected, onClick }: CompanyButtonProps) => (
   <button 
     className={`w-full text-left px-4 py-3 font-mono text-base border-b border-black transition-all duration-200 ${
       isSelected 
@@ -39,7 +39,7 @@ const CompanyButton = ({ index, company, isSelected, onClick }: CompanyButtonPro
     aria-selected={isSelected}
     role="tab"
   >
-    {index + 1}. {company}
+    {company}
   </button>
 );
 
@@ -90,19 +90,19 @@ const WindowContainer = ({ title, children }: WindowContainerProps) => (
 );
 
 const Experience = () => {
-  // Track the currently selected company
-  const [selectedCompany, setSelectedCompany] = useState<string>(experiences[0].company);
+  // Track the currently selected experience by id
+  const [selectedExperienceId, setSelectedExperienceId] = useState<string>(experiences[0].id);
   const experienceDetailsRef = useRef<HTMLDivElement>(null);
   
   // Find the selected experience
-  const selectedExperience = experiences.find(exp => exp.company === selectedCompany) || experiences[0];
+  const selectedExperience = experiences.find(exp => exp.id === selectedExperienceId) || experiences[0];
 
-  // Reset scroll position when company changes
+  // Reset scroll position when experience changes
   useEffect(() => {
     if (experienceDetailsRef.current) {
       experienceDetailsRef.current.scrollTop = 0;
     }
-  }, [selectedCompany]);
+  }, [selectedExperienceId]);
   
   return (
     <section id="experience" className="bg-[#d6ddeb] px-16 md:px-24 lg:px-32 py-30">
@@ -113,13 +113,13 @@ const Experience = () => {
         <div className="md:w-1/3">
           <WindowContainer title="companies.txt">
             <div className="overflow-y-scroll custom-scrollbar flex-grow">
-              {experiences.map((exp, index) => (
+              {experiences.map((exp) => (
                 <CompanyButton
                   key={exp.id}
-                  index={index}
                   company={exp.company}
-                  isSelected={exp.company === selectedCompany}
-                  onClick={() => setSelectedCompany(exp.company)}
+                  experienceId={exp.id}
+                  isSelected={exp.id === selectedExperienceId}
+                  onClick={() => setSelectedExperienceId(exp.id)}
                 />
               ))}
             </div>

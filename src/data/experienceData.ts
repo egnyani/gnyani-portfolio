@@ -13,133 +13,157 @@ export interface Experience {
 }
 
 // Export the experiences data
-export const experiences: Experience[] =[
+export const experiences: Experience[] = [
   {
     id: "reli",
-    role: "Data Analyst Intern",
+    role: "Software Developer",
     company: "RELI Group Inc.",
-    period: "February 2025 – Present",
+    period: "September 2025 – Present",
     bullets: [
       {
         id: "reli-1",
-        text: "Developed and automated an ETL pipeline to extract and load GovWin data into structured formats, reducing manual effort by 80% and ensuring timely data reporting."
+        text: "Worked across Databricks and the lakehouse environment to design and refine a series of proof-of-concepts focused on detecting fraud, waste, and abuse. Most of the work involved exploring different ML approaches and understanding how well they behaved on large healthcare datasets."
       },
       {
         id: "reli-2",
-        text: "Enhanced data validation and error handling using Excel macros, Pandas, and NumPy, achieving 99.5% data accuracy and cutting data processing time by 50%."
+        text: "Built end-to-end pipelines on Databricks, starting from raw Bronze ingestion and moving through Silver cleaning to Gold feature engineering. Used AutoML and custom model training workflows to compare approaches and understand which ones were reliable in real-world scenarios."
       },
       {
         id: "reli-3",
-        text: "Collaborated with business intelligence teams to optimize reporting dashboards in Power BI and Streamlit, boosting data visualization quality and speeding up decision-making by 40%."
-      },
-      {
-        id: "reli-4",
-        text: "Built a keyword-scoring engine using TF-IDF and custom rules to auto-rank government opportunities based on relevance to internal capability statements."
-      },
-      {
-        id: "reli-5",
-        text: "Created reusable Python scripts and API connectors to automate weekly refresh of business reports, eliminating repetitive tasks for multiple departments."
-      },
-      {
-        id: "reli-6",
-        text: "Coordinated with project managers to design a scoring logic for prioritizing GovWin bids, integrating historical win-loss analysis for strategic decision-making."
+        text: "Developed backend components, Spark jobs, and internal data services that supported the ML efforts, while also helping the team test ideas faster by creating small tools to visualize features, inspect anomalies, and compare model outputs side by side."
       }
     ]
   },
+
+  {
+    id: "intern-reli",
+    role: "Software Developer Intern",
+    company: "RELI Group Inc.",
+    period: "February 2025 – October 2025",
+    bullets: [
+      {
+        id: "intern-reli-1",
+        text: "Helped build a full-stack internal platform using FastAPI, React, Azure SQL, and Docker. The system supported day-to-day workflows across teams and became a stable part of the internal tooling ecosystem."
+      },
+      {
+        id: "intern-reli-2",
+        text: "Worked on a contract intelligence platform based on Spring Boot microservices, where I integrated Redis caching, added ML-driven processing steps, and improved how the system handled complex document loads."
+      },
+      {
+        id: "intern-reli-3",
+        text: "Designed and iterated on RAG pipelines using FAISS vector stores and different orchestration patterns. Spent a lot of time experimenting with embeddings and retrieval setups to find combinations that were both accurate and production-friendly."
+      },
+      {
+        id: "intern-reli-4",
+        text: "Collaborated closely with engineering and product teams, breaking down messy problems into smaller experiments and turning those findings into working components that fit into the broader platform."
+      }
+    ]
+  },
+
   {
     id: "nexis",
-    role: "AI Researcher",
-    company: "NEXIS Lab, Syracuse University",
-    period: "February 2025 – May 2025",
+    role: "Software Engineer Intern",
+    company: "NEXIS Student Technology Lab",
+    period: "May 2024 – May 2025",
     bullets: [
       {
         id: "nexis-1",
-        text: "Utilized Hugging Face’s distilbert-base-uncased model for sentiment analysis on 10,000+ social media posts, achieving 92% accuracy and reducing manual labeling by 60%."
+        text: "Designed ETL pipelines in Python, SQL, and Apache Spark to clean, validate, and standardize large sets of electoral data. Focused on building a structure that was reproducible, auditable, and easy for analysts to work with."
       },
       {
         id: "nexis-2",
-        text: "Built a responsive Streamlit dashboard to visualize sentiment trends, keyword frequency, and model predictions in real time, reducing stakeholder review time by 40%."
+        text: "Built backend services using FastAPI and Spring Boot, including REST APIs and basic anomaly-detection logic to help detect inconsistencies in incoming records."
       },
       {
         id: "nexis-3",
-        text: "Integrated BERT-based NLP pipelines into the research workflow, reducing manual text tagging by 40 hours per week and improving research efficiency."
+        text: "Implemented containerized workflows using Docker and Jenkins, which allowed the lab to move experiments from notebooks into repeatable CI/CD pipelines."
       },
       {
         id: "nexis-4",
-        text: "Fine-tuned DistilBERT using domain-specific data to enhance the model's understanding of misinformation and improve classification of harmful content."
+        text: "Worked with researchers and analysts to translate data findings into clear reports and visual summaries, helping non-technical teams understand the story behind the data."
+      }
+    ]
+  },
+
+  {
+    id: "acmesia",
+    role: "Software Engineer",
+    company: "Acmesia Consultants LLP",
+    period: "May 2020 – July 2023",
+    bullets: [
+      {
+        id: "acmesia-1",
+        text: "Built a full-stack client portal using Flask/Django, React, and MongoDB as part of a microservices setup. The application handled daily client operations and significantly reduced manual coordination across teams."
       },
       {
-        id: "nexis-5",
-        text: "Designed a comparative study of transformer models versus traditional ML techniques (Logistic Regression, SVM) to advocate for scalable AI deployment."
+        id: "acmesia-2",
+        text: "Developed Node.js microservices with PostgreSQL and Redis to support real-time dashboards and reporting tools. Focused heavily on reliability, caching strategies, and consistent API behavior under load."
       },
       {
-        id: "nexis-6",
-        text: "Conducted error analysis on false positives to iteratively improve NLP pipeline thresholds, increasing precision by 8% across critical misinformation categories."
+        id: "acmesia-3",
+        text: "Designed a serverless backend on AWS using Lambda, API Gateway, and RDS. The system became the backbone for several customer-facing features and helped scale the platform without needing dedicated infrastructure management."
       }
     ]
   },
   {
-    id: "ballot",
-    role: "Research Fellow",
-    company: "Ballotpedia",
-    period: "January 2025 – March 2025",
+    id: "verzeo",
+    role: "Software Developer Intern",
+    company: "Verzeo",
+    period: "May 2020 – Aug 2020",
     bullets: [
       {
-        id: "ballot-1",
-        text: "Led data validation projects by analyzing and cross-referencing 1,000+ electoral records using SQL and R, improving accuracy to 95%+ and speeding up retrieval by 30%."
+        id: "verzeo-1",
+        text: "Worked on small AI and data projects where I analyzed user behavior patterns using Python, NumPy, and scikit-learn to understand how people interacted with early product features."
       },
       {
-        id: "ballot-2",
-        text: "Built automated research scripts in Python and Pandas for data extraction and processing, reducing manual verification time by 20%."
+        id: "verzeo-2",
+        text: "Built simple predictive models and experimented with collaborative filtering techniques, which helped the team test out basic personalization ideas."
       },
       {
-        id: "ballot-3",
-        text: "Collaborated with data scientists to deploy XGBoost-based anomaly detection models, identifying inconsistencies and reducing public-facing data errors by 25%."
+        id: "verzeo-3",
+        text: "Cleaned and prepared datasets, optimized a few slow scripts, and helped streamline the internal workflow so insights could be generated faster."
+      },
+    ]
+  },
+  {
+    id: "dezignolics",
+    role: "Python Developer Intern",
+    company: "Dezignolics Web & Software Solutions",
+    period: "May 2019 – Aug 2019",
+    bullets: [
+      {
+        id: "dez-1",
+        text: "Built Python automation scripts to collect and process data from websites using libraries like BeautifulSoup and Requests."
       },
       {
-        id: "ballot-4",
-        text: "Designed a reproducible R Markdown workflow to automate report generation and visual summaries for public election data."
+        id: "dez-2",
+        text: "Helped maintain and improve internal scraping workflows, making them more reliable for repeated daily runs."
       },
       {
-        id: "ballot-5",
-        text: "Worked closely with policy analysts to interpret data-driven findings and translate them into publicly digestible narratives and infographics."
-      },
-      {
-        id: "ballot-6",
-        text: "Developed SQL-based triggers and logging mechanisms to track and flag inconsistencies in new electoral data entries for audit purposes."
+        id: "dez-3",
+        text: "Assisted in organizing raw scraped data into a structured format so it could be used for simple analytics and client reports."
       }
     ]
   },
   {
-    id: "pwp",
-    role: "Founder & Data Analyst",
-    company: "Picky With Picks",
-    period: "March 2022 – May 2023",
+    id: "dcodetech",
+    role: "Web Developer Intern",
+    company: "Dcodetech",
+    period: "Jan 2018 – Apr 2018",
     bullets: [
       {
-        id: "pwp-1",
-        text: "Conducted customer segmentation using K-means clustering, Python, and SQL, increasing email campaign CTR by 35% and conversions by 18%."
+        id: "dc-1",
+        text: "Designed and built a small static website using HTML5, CSS3, and vanilla JavaScript as part of the company’s internal training projects."
       },
       {
-        id: "pwp-2",
-        text: "Designed and deployed over 5 interactive Tableau dashboards for retail clients, automating KPIs and saving 40 hours/month in manual reporting."
+        id: "dc-2",
+        text: "Learned the basics of responsive layouts, navigation flow, and making web pages load faster on lower-end devices."
       },
       {
-        id: "pwp-3",
-        text: "Cleaned and transformed customer record datasets using SQL and Excel, enhancing reporting reliability and improving data accuracy by 28%."
-      },
-      {
-        id: "pwp-4",
-        text: "A/B tested landing pages and content strategy using Google Analytics, optimizing for bounce rate and increasing user engagement time by 22%."
-      },
-      {
-        id: "pwp-5",
-        text: "Implemented recommendation logic using collaborative filtering techniques to personalize product suggestions on the platform."
-      },
-      {
-        id: "pwp-6",
-        text: "Built backend automation scripts for order processing and inventory tracking, reducing manual work and improving fulfillment accuracy."
+        id: "dc-3",
+        text: "Collaborated with mentors to refine UI components and improve accessibility for users visiting on mobile browsers."
       }
     ]
   }
+  
 ];
