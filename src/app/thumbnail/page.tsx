@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import ThumbnailGenerator from '@/components/ThumbnailGenerator';
 
 export default function ThumbnailPage() {
@@ -19,7 +20,7 @@ export default function ThumbnailPage() {
           <ThumbnailGenerator onThumbnailGenerated={handleThumbnailGenerated} />
           {thumbnailUrl && (
             <div className="mt-4">
-              <img src={thumbnailUrl} alt="Generated Thumbnail" className="w-full" />
+              <Image src={thumbnailUrl} alt="Generated Thumbnail" className="w-full" width={1200} height={630} unoptimized />
               <a
                 href={thumbnailUrl}
                 download="portfolio-thumbnail.png"

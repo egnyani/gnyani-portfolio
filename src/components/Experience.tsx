@@ -23,12 +23,11 @@ const scrollbarStyles = `
 // Company Button Component
 interface CompanyButtonProps {
   company: string;
-  experienceId: string;
   isSelected: boolean;
   onClick: () => void;
 }
 
-const CompanyButton = ({ company, experienceId, isSelected, onClick }: CompanyButtonProps) => (
+const CompanyButton = ({ company, isSelected, onClick }: CompanyButtonProps) => (
   <button 
     className={`w-full text-left px-4 py-3 font-mono text-base border-b border-black transition-all duration-200 ${
       isSelected 
@@ -117,7 +116,6 @@ const Experience = () => {
                 <CompanyButton
                   key={exp.id}
                   company={exp.company}
-                  experienceId={exp.id}
                   isSelected={exp.id === selectedExperienceId}
                   onClick={() => setSelectedExperienceId(exp.id)}
                 />
