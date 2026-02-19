@@ -24,18 +24,26 @@ export const experiences: Experience[] = [
     bullets: [
       {
         id: "reli-1",
-        text: "Architecting large-scale AI automation ecosystems supporting multi-team operations, integrating predictive analytics, semantic search, and workflow orchestration to accelerate business-intelligence delivery."
+        text: "Designed and shipped agentic AI code modernization agents using Claude, tool calling, and orchestration workflows to analyze legacy codebases and automate multi-step refactors from ingestion to validated output."
       },
       {
         id: "reli-2",
-        text: "Engineering production-grade microservice platforms using Python, FastAPI, SQL, Docker, and AWS EKS, enabling horizontally scalable, low-latency data pipelines handling multi-million-record workloads."
+        text: "Built and optimized distributed data pipelines in Databricks using Python, PySpark, and SQL to process 50M+ healthcare claims records, enabling scalable analytics for revenue leakage and compliance risk detection."
       },
       {
         id: "reli-3",
-        text: "Implementing enterprise-level RAG (Retrieval-Augmented Generation) pipelines powered by FAISS, LangChain, and LLM APIs, achieving near-real-time contextual retrieval with 90%+ precision on contract analytics."
+        text: "Embedded anomaly detection (Isolation Forest, LOF) into production pipelines and exposed interpretable risk scoring via SHAP and LIME for downstream APIs and internal tooling."
       },
       {
         id: "reli-4",
+        text: "Developed RAG-powered search and Q&A services using FAISS vector indexing, structured data models, and LLM reasoning to deliver accurate, explainable responses over documents and analytics at scale."
+      },
+      {
+        id: "reli-5",
+        text: "Leveraged LLM-assisted developer tooling (Cursor Composer) to accelerate SQL development, data exploration, code refactoring, and feature delivery while maintaining code quality."
+      },
+      {
+        id: "reli-6",
         text: "Driving system reliability and observability initiatives via Prometheus, Grafana, and CloudWatch, cutting incident response times by 40% and boosting service uptime to 99.99%."
       }
     ]
@@ -53,15 +61,15 @@ export const experiences: Experience[] = [
       },
       {
         id: "intern-reli-2",
-        text: "Spearheaded design of a Contract Intelligence Platform leveraging Spring Boot, Redis, Kafka, and Hugging Face Transformers, delivering 1,000+ real-time document inferences/day while reducing query latency by 70%."
+        text: "Built and deployed serverless backend microservices on Azure Function Apps to power REST APIs and event-driven pipelines, using FastAPI, JWT-based authentication, RBAC, async processing, retries, caching, and structured logging."
       },
       {
         id: "intern-reli-3",
-        text: "Devised and productionized a multi-agent RAG architecture (FAISS, Sentence Transformers, LangChain, OpenAI API) achieving 89% top-3 recall, directly elevating bid-win probability and proposal velocity."
+        text: "Implementing enterprise-level RAG (Retrieval-Augmented Generation) pipelines powered by FAISS, LangChain, and LLM APIs, achieving near-real-time contextual retrieval with 90%+ precision on contract analytics."
       },
       {
         id: "intern-reli-4",
-        text: "Established container-native CI/CD pipelines through GitHub Actions and Jenkins, enabling zero-downtime deployments and proactive telemetry on Azure Kubernetes Service (AKS) clusters."
+        text: "Deployed and managed scalable applications on Azure using Function Apps, App Service, Blob Storage, and Azure Kubernetes Service, while building container-native CI/CD pipelines with GitHub Actions and Jenkins to support backend processing, zero-downtime deployments, and proactive telemetry."
       }
     ]
   },
@@ -70,7 +78,7 @@ export const experiences: Experience[] = [
     role: "Software Engineer Intern",
     company: "Acmesia Consultants LLP",
     location: "Mumbai, India",
-    period: "May 2020 – July 2023",
+    period: "May 2022 – July 2023",
     bullets: [
       {
         id: "acmesia-1",
@@ -86,7 +94,7 @@ export const experiences: Experience[] = [
       },
       {
         id: "acmesia-4",
-        text: "Championed DevOps excellence through Agile, TDD, and performance-tuning sprints, hardening CI/CD pipelines and accelerating feature delivery velocity by 45%."
+        text: "Demonstrated DevOps excellence by leveraging Agile methodologies, Test-Driven Development (TDD), and targeted performance-tuning sprints to strengthen CI/CD pipelines and achieve a 45% increase in feature delivery velocity."
       }
     ]
   }

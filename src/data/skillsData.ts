@@ -5,41 +5,41 @@ export interface SkillCategory {
   items: string[];
 }
 
-// Export the skills data (aligned with resume: Languages, Developer/Debugging Tools, Technologies/Frameworks, Other)
+// Export the skills data (aligned with resume)
 export const skills: SkillCategory[] = [
   {
     id: "languages",
     category: "Languages",
-    items: ["Python", "C/C++", "Java", "C#", "HTML", "CSS", "JavaScript", "SQL", "PHP", "TypeScript", "Ruby", "Go"],
+    items: ["Python", "C#", "JavaScript", "TypeScript", "Go", "SQL"],
   },
   {
-    id: "developer-tools",
-    category: "Developer & Debugging Tools",
-    items: ["Visual Studio", "VS Code", "IntelliJ", "Eclipse", "Android Studio", "JUnit", "Mockito"],
+    id: "backend",
+    category: "Backend",
+    items: ["FastAPI", "Flask", "Node.js", "REST APIs", "Microservices Architecture", "API Design", "WebSockets", "Celery", "Redis", "Kafka"],
   },
   {
-    id: "tech-frameworks",
-    category: "Technologies & Frameworks",
-    items: ["MySQL", "Node.js", "Next.js", "Express.js", "ReactJS", "Jenkins", "GraphQL", "Apache Kafka", "Git", "Oracle", "PostgreSQL", "FastAPI", "Flask", "Django", "Spring Boot", "LangChain", "Hugging Face Transformers"],
+    id: "web-frameworks",
+    category: "Web and Frameworks",
+    items: ["React", "Next.js", "Express.js", "HTML5", "CSS3", "JavaScript", "Frontend–Backend Integration"],
+  },
+  {
+    id: "cloud",
+    category: "Cloud and Platform",
+    items: ["AWS (EC2, S3, Lambda, DynamoDB)", "Azure (Functions, Monitor)", "Kubernetes", "API Gateway", "CloudWatch"],
   },
   {
     id: "databases",
     category: "Databases",
-    items: ["MySQL", "PostgreSQL", "MongoDB", "Azure SQL", "Redis", "Cassandra"],
+    items: ["PostgreSQL", "SQL Server", "MongoDB", "DynamoDB", "Databricks", "Snowflake", "ETL Pipelines", "Data Modeling", "Query Optimization"],
   },
   {
-    id: "cloud-devops",
-    category: "Cloud & DevOps",
-    items: ["AWS (EKS, Lambda, S3, RDS, EC2, Kinesis)", "Azure (AKS)", "Docker", "Kubernetes", "GitHub Actions", "Prometheus", "Grafana", "CloudWatch"],
+    id: "devops",
+    category: "DevOps & Delivery",
+    items: ["Docker", "Git", "CI/CD", "Grafana", "Prometheus", "System Design", "Jira", "Agile / Scrum", "Jenkins"],
   },
   {
-    id: "ml-data",
-    category: "ML & Data",
-    items: ["NumPy", "Pandas", "FAISS", "RAG", "LLM APIs", "Sentence Transformers", "Spark"],
-  },
-  {
-    id: "other",
-    category: "Other",
-    items: ["OOP Principles", "Maven", "RESTful APIs", "Agile", "TDD"],
+    id: "ai-ml",
+    category: "AI / ML & LLM Systems",
+    items: ["RAG", "LLMs", "LangChain", "Prompt Engineering", "Hugging Face", "PyTorch", "scikit-learn", "Embeddings", "Similarity Search", "Vector DB", "Text Classification", "Model Evaluation", "A/B Testing", "Rule Based Validation"],
   },
 ];
