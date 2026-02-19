@@ -23,22 +23,22 @@ export interface SocialLink {
 }
 
 export const socialLinks: SocialLink[] = [
-  { 
-    id: "github", 
-    name: "GitHub", 
-    href: "https://github.com/egnyani", 
-    icon: "github" 
+  {
+    id: "email",
+    name: "Email",
+    href: "mailto:gnyenug@gmail.com",
+    icon: "email",
   },
-  { 
-    id: "email", 
-    name: "Email", 
-    href: "mailto:gnyenug@gmail.com", 
-    icon: "email" 
+  {
+    id: "linkedin",
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/gnyani-enugandula-6a0149262/",
+    icon: "linkedin",
   },
-  { 
-    id: "linkedin", 
-    name: "LinkedIn", 
-    href: "https://www.linkedin.com/in/gnyani-enugandula-6a0149262/", 
-    icon: "linkedin" 
+  {
+    id: "github",
+    name: "GitHub",
+    href: "https://github.com/egnyani",
+    icon: "github",
   },
 ]; 

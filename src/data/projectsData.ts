@@ -16,8 +16,45 @@ export interface Project {
 
 // Export the projects data
 export const projects: Project[] = [
+  {
+    id: "predictive_monitoring",
+    title: "Predictive System Monitoring with AI",
+    date: "December 2025",
+    description: "AI-driven monitoring platform to predict infrastructure failures by analyzing logs, metrics, and user behavior.",
+    techStack: ["Kafka", "Spark", "AWS Kinesis", "Grafana", "Prometheus"],
+    githubLink: "#",
+    link: "#",
+    details: {
+      status: "Completed",
+      features: [
+        "Real-time data processing with Kafka, Spark, and AWS Kinesis",
+        "ML models for anomaly detection and time-series forecasting",
+        "Grafana and Prometheus dashboards for actionable reliability insights"
+      ],
+      fullDescription: "Developed an AI-driven monitoring platform to predict infrastructure failures by analyzing logs, metrics, and user behavior, leveraging Kafka, Spark, and AWS Kinesis for real-time data processing."
+    }
+  },
+  {
+    id: "task_management",
+    title: "Collaborative Task Management Platform",
+    date: "May 2025",
+    description: "MERN-based web app for managing projects, tasks, and team collaboration with role-based authentication and real-time updates.",
+    techStack: ["MongoDB", "Express.js", "React", "Node.js", "Redux", "AWS EC2", "Docker"],
+    githubLink: "#",
+    link: "#",
+    details: {
+      status: "Completed",
+      features: [
+        "RESTful APIs with Express.js and Node.js; MongoDB for data persistence",
+        "State management with Redux; role-based authentication and real-time task updates",
+        "React UI with drag-and-drop task boards, project dashboards, and performance analytics",
+        "Deployed on AWS EC2 using Docker for scalability"
+      ],
+      fullDescription: "Developed a MERN-based web app for managing projects, tasks, and team collaboration with role-based authentication and real-time task updates. Built RESTful APIs with Express.js and Node.js, integrated MongoDB for data persistence, and designed an intuitive React UI featuring drag-and-drop task boards, project dashboards, and performance analytics; deployed on AWS EC2 using Docker for scalability."
+    }
+  },
   /* ─────────────────────────────
-     1. RELI Group – GovWin ETL & Opportunity Scoring
+     RELI Group – GovWin ETL & Opportunity Scoring
   ───────────────────────────── */
   {
     id: "govwin_etl",

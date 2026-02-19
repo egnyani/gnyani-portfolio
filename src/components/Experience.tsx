@@ -52,7 +52,7 @@ const ExperienceDetail = ({ experience }: ExperienceDetailProps) => (
   <div className="animate-fadeIn">
     <div className="flex flex-col mb-4 pb-4 border-b-2 border-dashed border-black">
       <h3 className="text-2xl font-bold">{experience.role}</h3>
-      <p className="font-mono text-sm mt-1">{experience.period}</p>
+      <p className="font-mono text-sm mt-1">{experience.period}{experience.location ? ` · ${experience.location}` : ""}</p>
     </div>
     
     <ul className="space-y-4 mt-6">

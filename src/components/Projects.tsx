@@ -41,10 +41,10 @@ const ProjectCard = ({ project, onSelect }: ProjectCardProps) => (
       <span className="text-sm text-black">{project.date}</span>
     </div>
     
-    <div className="p-4 bg-[#F9E8D0] flex flex-col h-[220px]">
-      <h3 className="text-lg font-bold mb-2">{project.title}</h3>
-      <p className="mb-4 flex-grow">{project.description}</p>
-      <div className="mt-auto">
+    <div className="p-4 bg-[#F9E8D0] flex flex-col h-[220px] min-h-0">
+      <h3 className="text-lg font-bold mb-2 flex-shrink-0 truncate" title={project.title}>{project.title}</h3>
+      <p className="mb-4 flex-grow min-h-0 overflow-hidden line-clamp-4 text-sm">{project.description}</p>
+      <div className="flex-shrink-0">
         <button 
           onClick={() => onSelect(project)}
           className="bg-[#EECDBA] inline-block px-4 py-2 border-2 border-black shadow-[2px_2px_0_#000] hover:bg-black hover:text-white transition"

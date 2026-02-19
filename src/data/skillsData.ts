@@ -5,46 +5,41 @@ export interface SkillCategory {
   items: string[];
 }
 
-// Export the skills data
+// Export the skills data (aligned with resume: Languages, Developer/Debugging Tools, Technologies/Frameworks, Other)
 export const skills: SkillCategory[] = [
   {
     id: "languages",
     category: "Languages",
-    items: ["Python", "R", "SQL"],
+    items: ["Python", "C/C++", "Java", "C#", "HTML", "CSS", "JavaScript", "SQL", "PHP", "TypeScript", "Ruby", "Go"],
   },
   {
-    id: "analytics",
-    category: "Data Analysis & Visualization",
-    items: ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Power BI", "Tableau", "Streamlit", "Plotly"],
+    id: "developer-tools",
+    category: "Developer & Debugging Tools",
+    items: ["Visual Studio", "VS Code", "IntelliJ", "Eclipse", "Android Studio", "JUnit", "Mockito"],
   },
   {
-    id: "ml-nlp",
-    category: "Machine Learning & NLP",
-    items: ["Scikit-learn", "XGBoost", "spaCy", "Hugging Face Transformers", "SHAP", "BERT", "TF-IDF"],
-  },
-  {
-    id: "data-eng",
-    category: "ETL & Data Engineering",
-    items: ["Apache Airflow", "RESTful APIs", "Excel Macros", "Instaloader"],
+    id: "tech-frameworks",
+    category: "Technologies & Frameworks",
+    items: ["MySQL", "Node.js", "Next.js", "Express.js", "ReactJS", "Jenkins", "GraphQL", "Apache Kafka", "Git", "Oracle", "PostgreSQL", "FastAPI", "Flask", "Django", "Spring Boot", "LangChain", "Hugging Face Transformers"],
   },
   {
     id: "databases",
     category: "Databases",
-    items: ["MySQL", "PostgreSQL", "MongoDB", "Snowflake"],
+    items: ["MySQL", "PostgreSQL", "MongoDB", "Azure SQL", "Redis", "Cassandra"],
   },
   {
     id: "cloud-devops",
     category: "Cloud & DevOps",
-    items: ["AWS (S3, Lambda, EC2, Redshift)", "Azure", "Docker", "Git", "GitHub"],
+    items: ["AWS (EKS, Lambda, S3, RDS, EC2, Kinesis)", "Azure (AKS)", "Docker", "Kubernetes", "GitHub Actions", "Prometheus", "Grafana", "CloudWatch"],
   },
   {
-    id: "web-dev",
-    category: "APIs & Web",
-    items: ["FastAPI", "Flask", "D3.js"],
+    id: "ml-data",
+    category: "ML & Data",
+    items: ["NumPy", "Pandas", "FAISS", "RAG", "LLM APIs", "Sentence Transformers", "Spark"],
   },
   {
     id: "other",
-    category: "Other Tools",
-    items: ["Prompt Engineering", "VS Code", "Windows", "Excel", "Google Analytics"],
-  }
+    category: "Other",
+    items: ["OOP Principles", "Maven", "RESTful APIs", "Agile", "TDD"],
+  },
 ];

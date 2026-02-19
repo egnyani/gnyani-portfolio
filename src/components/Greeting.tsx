@@ -5,11 +5,11 @@ const Greeting = () => (
     <div>
       <h1 className="text-4xl font-extrabold mb-5">Hello!</h1>
       <h1 className="text-5xl font-extrabold mb-10">I&apos;m Gnyani Enugandula</h1>
-      <h2 className="text-xl font-semibold mb-4">Software Engineer | Data & AI</h2>
+      <h2 className="text-xl font-semibold mb-4">Software Developer | Data & AI</h2>
       <p className="mb-4 text-justify">
-      I&apos;m Gnyani (pronounced gyaa-ni), I&apos;m a software engineer who enjoys working with data and AI.
-      I have a Master&apos;s in Information Systems from Syracuse University and  I'm currently a Software Developer at RELI Group Inc., spending a lot of time in Databricks, trying out POCs and training ML models.
-      I&apos;ve worked across backend development, data lakehouses, and building RAG pipelines, and I enjoy picking up new tech to see how it can actually help us in real projects
+      I&apos;m Gnyani (pronounced gyaa-ni), a software developer focused on large-scale AI automation, data pipelines, and production systems.
+      I have an M.S. in Information Systems from Syracuse University and I&apos;m currently a Software Developer at RELI Group Inc., where I architect AI automation ecosystems, build microservices with Python and FastAPI, implement enterprise RAG pipelines with FAISS and LangChain, and drive observability with Prometheus and Grafana.
+      I&apos;ve worked across backend development, RAG and contract intelligence, and cloud-native DevOps—and I enjoy picking up new tech to ship reliable, high-impact solutions.
       </p>
       <a
         href="/assets/docs/G_Resume.pdf"
