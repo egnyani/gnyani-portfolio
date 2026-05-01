@@ -26,7 +26,7 @@ A simple, clean portfolio built with Next.js and TailwindCSS. It highlights my w
 - LinkedIn: https://www.linkedin.com/in/gnyani-enugandula-6a0149262/
 
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Design inspired by modern portfolio trends
 - Icons and assets from various open-source resources
